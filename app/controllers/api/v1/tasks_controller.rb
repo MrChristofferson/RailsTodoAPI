@@ -4,8 +4,9 @@ module Api::V1
         def index 
             @tasks = Task.all 
 
-            render json: @tasks.to_json(only: [:name, :priority, :due_date])
+            render json: @tasks#.to_json(only: [:name, :priority, :due_date])
         end
         
     end
 end
+ 
