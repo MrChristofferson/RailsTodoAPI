@@ -41,7 +41,7 @@ module Api::V1
     end
 
     def task_params
-      params.requare(:task).permit(:name, :priority, :due_date, :user_id)
+      params.require(:task).permit(:name, :priority, :due_date, :user_id)
     end
   end
 end
